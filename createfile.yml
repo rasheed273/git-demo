@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create file
+    file:
+      path: /home/ubuntu/temp.csv
+      owner: ubuntu
+      group: ubuntu
+      mode: 0777
+      state: touch
